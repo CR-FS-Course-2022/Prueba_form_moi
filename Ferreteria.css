@@ -37,7 +37,8 @@ fieldset {
 }
 .block1 {
     position: relative;
-    left: 15%;
+    width: 50%;
+    left: 25%;
     display: block;
 }
 label{
@@ -48,7 +49,7 @@ font-size: 1.5em;
 .block1>label,.block1>input[type="radio"] {
     display: inline;
 }
-.block1>input[type="checkbox"] {
+.block1>label[for="terms"] {
     display: block;
 }
 

@@ -28,14 +28,14 @@ form{
 
     }
 fieldset {
-    display: inline-block;
+    display: inline;
     border: 10cm;
     width: 30%;
     border: 5px solid #ccc;
     margin: 1em;
 
 }
-.inline1 {
+.block1 {
     position: relative;
     left: 15%;
     display: block;
@@ -45,10 +45,10 @@ display: block;
 font-size: 1.5em;
 }
 
-.inline1>label,.inline1>input[type="radio"] {
+.block1>label,.block1>input[type="radio"] {
     display: inline;
 }
-.inline1>input[type="checkbox"] {
+.block1>input[type="checkbox"] {
     display: block;
 }
 

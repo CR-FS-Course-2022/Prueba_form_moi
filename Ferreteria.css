@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+html{
+    margin: 0%;
+}
+body {
+    background-image: url(../03CSS/imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 2%;
+}
+h1,h2{
+    text-align: center;
+
+    }
+h1 {
+   font-size: 5em;
+}
+
+form{
+        background-color: rgba(0, 255, 255, 0.665);
+        display: block;
+        margin: 0 auto;
+
+    }
+fieldset {
+    display: inline-block;
+    border: 10cm;
+    width: 30%;
+    border: 5px solid #ccc;
+    margin: 1em;
+
+}
+.inline1 {
+    position: relative;
+    left: 15%;
+    display: block;
+}
+label{
+display: block;
+font-size: 1.5em;
+}
+
+.inline1>label,.inline1>input[type="radio"] {
+    display: inline;
+}
+.inline1>input[type="checkbox"] {
+    display: block;
+}
+

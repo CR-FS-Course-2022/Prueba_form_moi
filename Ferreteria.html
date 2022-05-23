@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Ferreteria.css" />
+    <title>ferretería el tornillo feliz</title>
+  </head>
+  <body>
+    <header><h1>ferretera el tornillo feliz</h1></header>
+    <main>
+      <h2>Formulario de registro</h2>
+      <div>
+        <form action="Base_de_datos.html" method="post" target="_blank">
+          <!-- Datos Personales -->
+          <fieldset class="inline">
+            <legend>¿Quien eres?</legend>
+            <label for="nombre" 
+              >¿Cuál es tu nombre?</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Introduce tu nombre aquí"
+              autocomplete="on"
+              accesskey="1"
+              maxlength="15"
+              minlength="3"
+              size="15"
+              required
+              pattern="^[a-zA-Z]+$"
+              title="Introduce tu nombre"
+            />
+            <label for="apellidos" 
+              >¿Cuáles son tus Apellidos?</label
+            >
+            <input
+              type="text"
+              id="apellidos"
+              placeholder="Introduce tus apellidos aquí"
+              autocomplete="on"
+              accesskey="2"
+              maxlength="15"
+              minlength="3"
+              size="15"
+              required
+              title="Introduce tus apellidos"
+              pattern="^[a-zA-Z]+$"
+            />
+            <label for="email" 
+              >¿Cuál es tu Correo Eléctronico?</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="Introduce tu Correo Electrónico aquí"
+              autocomplete="on"
+              accesskey="3"
+              maxlength="15"
+              minlength="3"
+              size="15"
+              required
+              title="Introduce tu email"
+            />
+          </fieldset>
+          <!-- Dirección -->
+          <fieldset class="inline">
+            <legend>¿De donde eres?</legend>
+            <label for="ciudad" >Ciudad</label>
+            <input
+              type="text"
+              id="ciudad"
+              placeholder="Introduce tu ciudad aquí"
+              autocomplete="on"
+              accesskey="4"
+              maxlength="10"
+              minlength="4"
+              size="15"
+              required
+              title="Introduce tu ciudad"
+              pattern="^[a-zA-Z]+$"
+            />
+            <label for="postal" 
+              >Introduce tu codigo postal</label
+            >
+            <input
+              type="text"
+              id="postal"
+              placeholder="Introduce tu codigo postal aquí"
+              autocomplete="off"
+              accesskey="5"
+              pattern="^[0-9]{5}$"
+              size="15"
+              required
+              title="Introduce el codigo postal"
+            />
+            <label for="pais">País</label>
+            <select name="pais" id="pais" accesskey="6">
+              <option value="francia">Fracia</option>
+              <option value="portugal">Portugal</option>
+              <option value="andorra">Andorra</option>
+              <option value="españa" selected>España</option>
+            </select>
+          </fieldset>
+          <!-- Logeo -->
+          <fieldset class="inline">
+            <legend>Inica Sesión</legend>
+            <label for="usuario" ">Usuario</label>
+            <input
+              type="text"
+              id="usuario"
+              placeholder="Introduce tu usuario aquí"
+              autocomplete="on"
+              accesskey="7"
+              maxlength="15"
+              minlength="3"
+              size="15"
+              required
+              title="Introduce tu usuario"
+              />
+            <label for="contraseña" 
+              >Introduce tu Contraseña</label
+            >
+            <input
+              type="password"
+              id="contraseña"
+              placeholder="Introduce tu contraseña aquí"
+              autocomplete="off"
+              accesskey="8"
+              maxlength="15"
+              minlength="3"
+              size="15"
+              required
+              autofocus
+              title="Introduce tu contraseña"
+            />
+            <label for="confirmar" 
+              >Confirma tu Contraseña</label
+            >
+            <input
+              type="password"
+              id="contraseña"
+              placeholder="Introduce tu contraseña aquí"
+              autocomplete="off"
+              accesskey="9"
+              maxlength="15"
+              minlength="3"
+              size="15"
+              required
+              autofocus
+              title="Confirma tu contraseña"
+            />
+           
+          </fieldset>
+          <!-- Condiciones de Registro-->
+          <fieldset class="inline1">
+            <legend>Condiciones de Registro</legend>
+           <p><label for="ofertas"
+              >Quiero recibir ofertas de Ferreteria el tornillo feliz</label
+            ></p>
+            <label for="dia">
+            <input
+              type="radio"
+              id="dia"
+              required
+            />Una vez por dia</label>
+            <label for="semana">
+                <input
+                  type="radio"
+                  id="semana"
+                  required
+                />Una vez por semana</label>
+                <label for="mes">
+                    <input
+                      type="radio"
+                      id="mes"
+                      required
+                    />Una vez por mes</label>
+            <label for="checkbox" title="Acepta Condiciones"
+              >
+            <input
+              type="checkbox"
+              id="checkbox"
+              required
+            />Aceptar terminos y Condiciones</label>
+          </fieldset>
+     <div id="Botones">
+              <button type="submit" >Enviar</button>
+              <button type="reset">Limpiar</button>
+     </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
